@@ -39,7 +39,7 @@
             <div class= "form-group">
                 <label>Foto Lokasi</label>
                 <input type="file" class="form-control" name="foto_lokasi" accept="image/*">
-                 <p class="text-danger"><?=  isset($errors['foto_lokasi'])==isset($errors['foto_lokasi'])? validation_show_error('foto_lokasi') : '' ?></p>
+                <p class="text-danger"><?=  isset($errors['foto_lokasi'])==isset($errors['foto_lokasi'])? validation_show_error('foto_lokasi') : '' ?></p>
             </div> 
             <br>
             <button type="submit" class="btn btn-primary">Simpan</button>
@@ -50,7 +50,7 @@
 </div>
 
 <script>
-   var streets = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    var streets = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap & CartoDB'
     });
 
@@ -102,9 +102,9 @@ const baseLayers = {
         var lat = e.latlng.lat;
         var lng = e.latlng.lng;
         if (!marker){
-           marker = L.marker(e.latlng).addTo(map);
+            marker = L.marker(e.latlng).addTo(map);
         }else{
-             marker.setLatLng (e.latlng);
+            marker.setLatLng (e.latlng);
         }
         latinput.value = lat;
         lnginput.value = lng;

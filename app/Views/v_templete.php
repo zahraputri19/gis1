@@ -17,7 +17,9 @@
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-            
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="<?= base_url('sbadmin') ?>/js/datatables-simple-demo.js"></script>  
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -114,8 +116,8 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?=  base_url('Lokasi/inputLokasi') ?>">Input Lokasi</a>
-                                    <a class="nav-link" href="layout-static.html">Data Lokasi</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Pemetaan Lokasi</a>
+                                    <a class="nav-link" href="<?=  base_url('Lokasi/index') ?>">Data Lokasi</a>
+                                    <a class="nav-link" href="<?=  base_url('Lokasi/pemetaanLokasi') ?>">Pemetaan Lokasi</a>
                                 </nav>
                             </div>
                             <a class="nav-link" href="tables.html">
